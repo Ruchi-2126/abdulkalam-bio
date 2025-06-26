@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('https://png.pngtree.com/thumb_back/fh260/background/20200801/pngtree-purple-abstract-background-fluid-gradient-with-wave-forms-image_375467.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .outer-wrapper {
+            background-color: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            width: 300px;
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .form-field input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .form-field button {
+            width: 100%;
+            padding: 12px;
+            background-color: #a25f5f;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .form-field button:hover {
+            background-color: #8c4f4f;
+        }
+
+        .form-field a {
+            text-decoration: none;
+            color: #7d2ae8;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .form-field a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="./birography.html">
-    <p><input type="email" placeholder="Enter email address"></p>
-    <p><input type="password" placeholder="Enter password"></p>
-    <p><a href="">Forget Password</a></p>
-    <p><button>Login</button></p>
-    </form>
+    <div class="outer-wrapper">
+        <form action="./birography.html" class="container">
+            <div class="form-field"><input type="email" placeholder="Enter email address"></div>
+            <div class="form-field"><input type="password" placeholder="Enter password"></div>
+            <div class="form-field"><a href="">Forget Password</a></p>
+            <div class="form-field"><button>Login</button></div>
+        </form>
+    </div>
 </body>
+
 </html>
